@@ -1,0 +1,14 @@
+#Faça um script que leia dois números e retorne como resultado a soma deles. Faça um script que leia algo
+#pelo teclado e mostra na tela o seu tipo de dado.
+
+a = input("Digite um número:")
+b = input("Digite mais um número:")
+
+n = a + b
+
+print(n.isnumeric()) #verifica se é numérico
+print(n.isalpha()) #verifica se é letra
+print(n.isspace()) #se é só espaço
+print(n.isalnum()) # se é alpha numerico por exemplo 
+print(n.isupper()) # se esta em letras minuscula
+print(n.istitle()) # palavra capitalizada por exemplo, Python
