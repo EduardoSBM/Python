@@ -1,0 +1,50 @@
+def mais():
+    x = int(input("digite o primeiro valor:"))
+    y = int(input("digite o segundo valor:"))
+    r = x + y
+    return r
+
+def menos():
+    x = int(input("digite o primeiro valor:"))
+    y = int(input("digite o segundo valor:"))
+    r = x - y
+    return r
+
+def vezes():
+    x = int(input("digite o primeiro valor:"))
+    y = int(input("digite o segundo valor:"))
+    r = x * y
+    return r
+
+def div():
+    x = int(input("digite o primeiro valor:"))
+    y = int(input("digite o segundo valor:"))
+    r = x / y
+    return r
+
+def main():
+    while True:
+
+        print("Bem-vindo a sua calculadora")
+        print("1 - mais")
+        print("2 - menos")
+        print("3 - multiplicação")
+        print("4 - divisão")
+        print("5 - encerrar")
+        op = int(input(" ecolha a opção pelo seu número:"))
+
+        if (op == 1):
+            print(mais())
+
+        if (op == 2):
+            print(menos())
+
+        if (op == 3):
+            print(vezes())
+             
+        if (op == 4):
+            print(div())
+
+        if (op == 5):
+            break;
+main()
