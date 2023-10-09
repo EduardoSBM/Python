@@ -1,0 +1,27 @@
+def convertf (tempc):
+    tempf = (tempc * 9/5) + 32
+    return tempf
+
+def convertk (tempc):
+    tempk = tempc + 273
+    return tempk
+
+def main():
+    while True:
+        tempc = float(input('Temperatura em Celsius a ser convertida: '))
+        print('-'*20)
+        conversao = int(input('1 - Converter para Fahrenheit'
+                            '\n2 - Converter para Kelvin'
+                            '\n3 - Encerrar'
+                            '\nEscolha a opção: '))
+        if conversao == 1:
+            tempf = convertf(tempc)
+            print(f'A temperatura {tempc} em Fahrneinheit é: {tempf}')
+        elif conversao == 2:
+            tempk = convertk(tempc)
+            print(f'A temperatura {tempc} em Kelvin é: {tempk}')
+        elif conversao == 3:
+            break
+        else:
+            print('Digite um valor de menu válido')
+main()
