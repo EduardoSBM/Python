@@ -1,0 +1,7 @@
+print("Olá, seja bem vindo!!")
+x = float(input("Insira o valor do produto desejado para obter o desconto: "))
+
+des = x - x * 0.05
+
+
+print(f'O valor do produto com desconto é de: {des} ')
