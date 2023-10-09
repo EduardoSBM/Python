@@ -1,0 +1,101 @@
+""" def normal """
+
+#def quadrado(x):
+#    return x**2
+
+#print(quadrado(4))   resultado vai dar 16, pois o programa deu 4!
+
+""" lambda """
+
+#print((lambda x : x **2 )(8))
+
+""" lambda com 2 parametros """
+
+#print((lambda x,y : y + y - x)(10,4))
+
+#def a (x,y):
+ #   return y + y - x
+
+#def a (x,y):
+ #    return y+y-x
+
+#print(a(10,4))
+
+#######  EXEMPLO DE APLICAÇÕES  ###################################333
+
+#EXEMPLO 01:
+
+""" lista = [
+    lambda x : x**2,
+    lambda x : x**3,
+    lambda x : x**4
+]
+
+for i in lista:
+    print(i(4))
+ """
+
+#da mesma forma que na lista de baixo a lista acima vai rodar até o último número da lista 
+
+""" lista1 = [1,2,3,4,5,6]
+
+for i in lista1:
+    print(i) """
+
+""" def a(x):
+    return x**2
+
+def b(x):
+    return x**3
+
+def c(x):
+    return x**4
+
+lista = [a,b,c]  
+
+for i in lista:
+    print(i(x = 2))
+
+print((lambda x,y : x + y)(77777777777777,3)) """
+
+############################## LAMBDA COM STRING #################################3333
+
+""" nome_idade = lambda nome, idade : print(f"{nome} possui {idade} anos")
+
+nome_idade("maria", 23)
+nome_idade("dudu", 29)
+nome_idade("joao", 24)
+nome_idade("pedro", 33) 
+
+(lambda nome, idade : print(f"{nome} tem {idade} anos"))((input("digite seu nome:")), (int(input("digite sua idade:"))))
+"""
+
+## EXEMPLO DE FUNÇÃO FILTER() ##
+
+""" n = [ 1,2,3,4,5,6,7,8,9,10,11,12]
+
+pares =list(filter(lambda x : x % 2 == 0, n))
+print(pares) 
+
+x = [ "maria" , "pedro", "joao"]
+
+a = list(filter(lambda y : "a" in y , x))
+print(a) """
+
+##ex1
+
+""" numero = [ 1,2,3,4,5]
+qua = list(map(lambda x: x**2, numero))
+print(qua) """
+
+##ex2 com string
+
+""" palavra = ["python", "é", "muito", "divertido" ]
+mai = list(map(lambda x : x.upper(), palavra))
+print(mai) """
+
+##ex3 com string
+
+fruta = [ "banana", "maçã", "laranja"]
+compri = list(map(lambda x : len(x), fruta))
+print(compri)
