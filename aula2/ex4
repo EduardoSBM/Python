@@ -1,0 +1,12 @@
+print("Olá, seja bem vindo ao seu exame!!")
+h = float(input("Insira o valor de sua altura: "))
+print("escolha o número seu sexo a seguir:\n 1- Masculino\n 2-Feminino")
+sex = int(input("Digite o número do seu sexo aqui:"))
+
+if sex == 1:
+    pesoideal = (h * 72.7) - 58
+    print(pesoideal)
+
+if sex == 2:
+    pesoideal = (h *62.1) - 44.7
+    print(pesoideal)
