@@ -1,0 +1,8 @@
+pratica = float(input("DIgite a sua nota pratica aqui:"))
+teorica = float(input("DIgite a sua nota teorica aqui:"))
+
+
+if pratica + teorica > 10 or pratica < 0 or teorica < 0 or pratica > 6 or teorica > 4:
+    print(f"Notas inválidas")
+else:
+    print(f"Sua nota pratica foi {pratica} e sua nota teorica foi {teorica}")
