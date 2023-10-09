@@ -1,0 +1,182 @@
+from msvcrt import kbhit
+from re import I
+from turtle import clear
+
+z = "pular linha"
+a = 4
+b = " cara de boi"
+c = 1.5
+d = True
+e = 5 +1j
+f = (1,4,6,8,9)#tupla só muda direto na programção.
+g = [2,3,4,7,0]#lista da para mudar durantre o programa. 
+h = {}
+print(type(a), type(b), type(c), type(d), type(e), type(f), type(g), type(h),) # "type" mostra o tipo de varialvél!
+
+#TIPOS DE PRINT SÓ PODE USAR A 3 E A 4  
+print("Hello",b)#1
+print("Hello" + b)#2
+
+print("Hello {}"   .format(b))#3
+print(f'Hello{b} e {a}')#4
+
+print("Semana:\n"+" Hoje: passar a limpo bglh roseane, começar folha da flávia \n"+"terça: estudar física ---> Diagrama de fases. Estudo dos Gases. Leis da Termodinâmica.começar fazer folha da Andréia etermiunar folha da flávia. \n"+"quarta: começar trabalho de universo da física, filme. \n"+"quinta: entregar folha da flávia e estudar para história.")
+
+alunos2137 = ["Nicolas", "Felipe", "Belerini", "gian" ]
+print(alunos2137)
+estudantestop = ("Ruan", "luan", "Bruno", "Eduardo")
+print(estudantestop)
+
+
+alunos2137[0] = "João"
+print(alunos2137[1]) # indice da lista
+print(alunos2137)
+
+nome = input("Digite seu nome :")
+idade =  int(input("Digite sua idade:"))
+print(type(idade))
+
+if idade >= 18 :
+    print("você é maior de idade")
+else :
+    print("você é menor de idade")    
+
+
+""" ORDEM DE PROCEDENCIA DO PYTHON É:
+1º - () (parênteses)
+2º - ** (potência)
+3º - * , / , // , %
+4º - + , -  """ #PARA COMENTAR É ALT + SHFT + A!!!!!!!!!!!!
+
+I = 4*4
+j = 4**4
+k = 4 / 2 #divisão normal
+l = 4 // 2# divisão a redondada
+
+
+print(I, j, k, l)
+
+print(" a==b igual \n a!=b diferente \n a<b menor \n a<=b menor igual \n a>b maior \n a>=b maior igual \n and ... or ")
+
+a = ["ruan", 1.7, 10, "lucas", "Paola"]
+#       0      1    2     3        4
+#      -5     -4   -3    -2       -1   
+print(a) #printa a lista toda
+print(a[0]) #printa ruan, pois é o primeiro = print(a[-5]) é a mesma coisa
+print(a[1]) #printa o dois, que é 1.7 = print(a[-4]) é a mesma coisa
+print(a[2]) #printa 10, pois é o terceiro = print(a[-3]) é a mesma coisa
+print(a[3]) #printa Lucas, pois é o quarto = print(a[-2]) é a mesma coisa
+print(a[4]) #printa Paola, pois é o quinto = print(a[-1]) é a mesma coisa
+#print(a[5]) #error
+
+#intervalo da lista
+
+print(a[1:4]) # aqui vai entrar os itens do 1 ao 3, pois o 4 não entra, logo: 1.7,10 e Lucas
+print(a[:4]) # aqui vai entrar os itens todos os itens iniciais ao 3, pois o 4 não entra, logo:  ruan,1.7,10 e Lucas
+print(a[4:]) # aqui vai entrar os itens do 4 ao final.
+
+# adicionar na lista!!
+
+#começando com .append()
+a.append("dudu")
+
+# agora  com o insert()
+
+a.insert(0, "jonas")# no insert funciona assim: (posição, item)
+
+#alterar na lista
+print(a)
+a[0] = "Bruno"
+print(a)
+
+#excluir itens da lista
+#começando com del
+
+print(a)
+del a[0]
+print(a)
+
+del a[0:3]
+print(a)
+
+#usando o remove
+#apaga o item
+
+print(a) 
+a.append("NIcolau")
+print(a)
+a.remove("NIcolau")#esse remove
+print(a)
+
+#limpar toda a lista
+
+#a.clear()
+#print(a)
+
+
+b = a.copy()
+
+print(a)
+print(b)
+
+# b = [1,2,3,4,5,6]
+# a = a + b 3atualiza a lista a
+# c = a + b # cria uma lista nova com as outras duas.
+
+# pesquisar a posição
+
+print(a.index("lucas"))#retorna a posição do item na lista (index) porém só a primeira vez que aprecer.
+
+d = [1, 4, 2
+, 8, 3, 6, 9, 1.7, 7]
+
+print(d)
+d.sort()#coloca em ordem crescente se for em numero e em letra por ordem alfabética.
+print(d)
+
+if "lucas" in a:
+    d.append(11)
+    print(d)
+
+for i in a:
+    print(a) #printa a lista para cada elemento.
+
+for i in a: 
+    print(i) #printa cada elemento.
+
+for i in range (10):
+    print(i)
+print(z)    
+
+for i in range (2,10):
+    print(i)
+print(z)
+
+for i in range (2,10,2):
+    print(i)    
+print(z)       
+
+for i in "linguagem de programação": 
+    print(i)
+print(z)
+
+x = int(input("digite em número :"))
+for i in range(x):
+    print(i)
+print(z)
+
+cont= 0
+for i in range(4):
+    cu = int(input("Digite seu número:"))
+    cont += cu
+    print(cont)
+
+lista = [0,1,2,3,4,5,6,7,8,9]
+
+for i in lista:
+    if "dudu"in lista:
+        print(lista)
+        break;
+    else:
+        lista.append("dudu")
+        print(lista)    
