@@ -1,0 +1,7 @@
+print("Olá, seja bem vindo!!")
+x = float(input("Insira o valor desejado para conversão em Doláres: "))
+
+dol = x / 5.41
+
+
+print(f'O valor que você pode comprar em dolares é de: {dol} ')
