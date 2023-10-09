@@ -1,1 +1,111 @@
+"""
+def ini():
+    print('aaaa')
+ini() 
 
+
+
+def flor():
+    nf = input('Digite o nome da flor: ')
+    cf = input('Digite a cor da flor: ')
+    print(f'o nome da flor é {nf} com a cor {cf}')
+flor()
+
+
+
+#com parametro e return
+def nome(n):
+    c = n.upper()
+    return c
+print(nome('bruno'))
+
+
+def name(n):
+    print('-' * 30)
+    d = n.upper()
+    print(f"{'Salve ', d}")
+    print('-' * 30)
+name('bruno')
+
+
+def soma(a, b):
+    s = a + b
+    print(f'A soma dos valores: {a} + {b} resulta em {s}')
+soma(10, 20)
+
+
+a = 1
+b = 2
+
+def soma(c, d):
+    s = c + d
+    return s
+
+result = soma(a, b)
+print(result)
+"""
+
+
+""" def soma(*n):
+    s = sum(n)
+    print(f'os valores {n} somados resulta em {s}')
+soma(1, 2, 3, 4, 5, 6) """
+
+""" def count(*n):
+    s = len(n)
+    print(f"A quantidade de itens passados é de:{s}")
+count(1,4,5,7,8,9) """
+
+""" def par(n):
+    if n % 2 == 0:  
+        return True
+    else:
+        return False
+print(par(2))
+print(par(3))
+print(par(4)) """
+
+""" def par():
+    n = int(input("Digite um valor: "))
+    if n % 2 == 0:
+        return True 
+    else:
+        return False
+
+print(par()) """
+
+""" def soma_media(a,b):
+    soma = a+b
+    media = (a+b)/2
+    return soma,media
+
+soma, media = soma_media(2,4)
+
+resultado = soma_media(2,4)
+print(f"A soma é de: {resultado[0]}")
+print(f"A média é de:{resultado[1]}")
+print(type(resultado))
+
+print(f"A soma é de {soma} e a média de {media}") """
+
+""" def cadastrar():
+    nome = input("Digite seu  nome:")
+    idade = int(input("Insira sua idade: "))
+    return nome, idade
+
+nome, idade = cadastrar()
+
+print(f"Cadastro efetuado com sucesso!!")
+print(f"O nome cadastrado é de: {nome} e a idade é de: {idade}") """
+
+def soma(a,b):  return a+b
+
+print(soma(2,3))
+
+def soma(a,b):  return a*b
+
+print(soma(2,3))
+
+def soma(a,b):  return a/b
+
+print(soma(2,3))
