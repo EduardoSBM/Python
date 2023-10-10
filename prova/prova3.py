@@ -1,4 +1,4 @@
-lista = [["artur", "123", "@gmail"], ["joao", "321", "@gay"]]
+lista = [["artur", "123", "@gmail"], ["joao", "321", "@gui"]]
 
 def cadastrar(): # criando a função
     nome = input("nome: ")
@@ -7,7 +7,7 @@ def cadastrar(): # criando a função
     lista.append([nome, telefone, email]) #adicionando com append a ultima posição uma lista com nome, telefone e email
 
 def mostrar():
-    print(lista) #[["artur", "123", "@gmail"], ["joao", "321", "@gay"]]
+    print(lista) #[["artur", "123", "@gmail"], ["joao", "321", "@gui"]]
     print(lista[0]) #["artur", "123", "@gmail"]
     print(lista[0][0]) #artur
     lista[0][0] = "jonas" # altera o valor [0][0]
